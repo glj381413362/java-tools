@@ -4,6 +4,8 @@ package com.common.tools.util;
 import static com.common.tools.util.exception.BusinessExceptionAssert.USER_NOT_FOUND;
 
 import com.common.tools.util.exception.BaseException;
+import com.common.tools.util.exception.BusinessExceptionAssert;
+import com.common.tools.util.exception.Msg;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -32,17 +34,17 @@ public class ExceptionTest {
 	@Ignore
 	@Test
 	public void testAcceptForTP1P2P3() throws Exception {
-		Object a = null;
-//		try {
-//			USER_NOT_FOUND.assertNotNull(a,"{} is null","a");
-//		} catch (BaseException e) {
-//			String trace = e.getTrace();
-//      System.out.println(trace);
-//		}
-//		if (1==1){
-//			throw new BaseException("测试{}","抛异常");
-////			throw  new BaseException("aa","av");
-//		}
+		Object user = null;
+		try {
+			BusinessExceptionAssert.USER_NOT_FOUND.assertNotNull(user,"根据code {}未查询到用户",user.getUserCode());
+		} catch (BaseException e) {
+			String trace = e.getTrace();
+      System.out.println(trace);
+		}
+		if (1==1){
+			throw new BaseException(Msg.of("测试{}"),"抛异常");
+//			throw  new BaseException("aa","av");
+		}
 
 	}
 
