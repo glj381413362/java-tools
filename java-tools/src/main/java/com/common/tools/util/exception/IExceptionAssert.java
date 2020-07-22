@@ -9,7 +9,6 @@ public interface IExceptionAssert {
    *
    * @param msg
    * @param args
-   * @return
    */
   BaseException newException(String msg, Object... args);
 
@@ -18,7 +17,6 @@ public interface IExceptionAssert {
    *
    * @param t
    * @param args
-   * @return
    */
   BaseException newException(Throwable t, String msg, Object... args);
 
@@ -27,7 +25,6 @@ public interface IExceptionAssert {
    *
    * @param obj
    * @author gongliangjun 2020-06-17 12:27 PM
-   * @return void
    */
   default void assertNotNull(Object obj) {
     if (obj == null) {
@@ -39,7 +36,6 @@ public interface IExceptionAssert {
    *
    * @param obj
    * @author gongliangjun 2020-06-17 12:27 PM
-   * @return void
    */
   default void assertNotNull(Object obj, String msg) {
     if (obj == null) {
@@ -51,7 +47,6 @@ public interface IExceptionAssert {
    * @param obj
    * @param args
    * @author gongliangjun 2020-06-17 12:28 PM
-   * @return void
    */
   default void assertNotNull(Object obj, Object... args) {
     if (obj == null) {
@@ -66,7 +61,6 @@ public interface IExceptionAssert {
    * @param msg
    * @param args
    * @author gongliangjun 2020-06-17 12:28 PM
-   * @return void
    */
   default void assertNotNull(Object obj, String msg, Object... args) {
 
@@ -79,7 +73,6 @@ public interface IExceptionAssert {
    *
    *
    * @author gongliangjun 2020-06-17 12:29 PM
-   * @return void
    */
   default void throwE() {
       throw newException();
@@ -90,7 +83,6 @@ public interface IExceptionAssert {
    * @param msg
    * @param args
    * @author gongliangjun 2020-06-17 12:29 PM
-   * @return void
    */
   default void throwE(String msg, Object... args) {
       throw newException(msg,args);
@@ -102,7 +94,6 @@ public interface IExceptionAssert {
    * @param msg
    * @param args
    * @author gongliangjun 2020-06-17 12:29 PM
-   * @return void
    */
   default void throwE(Throwable t ,String msg, Object... args) {
       throw newException(t,msg,args);
