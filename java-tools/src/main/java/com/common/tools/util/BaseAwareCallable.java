@@ -19,9 +19,7 @@ package com.common.tools.util;
 import java.util.concurrent.Callable;
 
 /**
- * <p>
- *
- * </p>
+ * <p>util </p>
  *
  * @author gongliangjun 2019/12/28 7:27 PM
  */

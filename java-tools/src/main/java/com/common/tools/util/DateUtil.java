@@ -241,9 +241,9 @@ public final class DateUtil {
 	/**
 	 * 日期按照指定格式转换成字符串
 	 *
-	 * @param date    日期
-	 * @param pattern 默认 yyyy-MM-dd HH:mm:ss
-	 * @return
+	 * @param date    日期 .
+	 * @param pattern 默认 yyyy-MM-dd HH:mm:ss .
+	 * @return String .
 	 */
 	public static String format(Date date, String pattern) {
 		DateFormat dateFormat = new SimpleDateFormat(pattern == null ? DATE_TIME : pattern);
@@ -253,9 +253,9 @@ public final class DateUtil {
 	/**
 	 * 将时间转换成对应的格式
 	 *
-	 * @param time
-	 * @param pattern
-	 * @return
+	 * @param time .
+	 * @param pattern .
+	 * @return Date .
 	 */
 	public static Date parse(String time, String pattern) throws ParseException {
 		//===============================================================================
@@ -276,9 +276,9 @@ public final class DateUtil {
 	/**
 	 * 取得两个日期间隔毫秒数（日期1-日期2）
 	 *
-	 * @param one
-	 * @param two
-	 * @return 间隔毫秒数
+	 * @param one .
+	 * @param two .
+	 * @return 间隔毫秒数 .
 	 */
 	public static long getDiffMilliseconds(Date one, Date two) {
 		Calendar sysDate = new GregorianCalendar();
@@ -294,9 +294,9 @@ public final class DateUtil {
 	/**
 	 * 取得两个日期间隔秒数（日期1-日期2）
 	 *
-	 * @param one 日期1
-	 * @param two 日期2
-	 * @return 间隔秒数
+	 * @param one 日期1 .
+	 * @param two 日期2 .
+	 * @return 间隔秒数 .
 	 */
 	public static long getDiffSeconds(Date one, Date two) {
 		Calendar sysDate = new GregorianCalendar();
@@ -324,9 +324,9 @@ public final class DateUtil {
 	/**
 	 * 取得两个日期的间隔天数
 	 *
-	 * @param one
-	 * @param two
-	 * @return 间隔天数
+	 * @param one .
+	 * @param two .
+	 * @return 间隔天数 .
 	 */
 	public static long getDiffDays(Date one, Date two) {
 		Calendar sysDate = new GregorianCalendar();
@@ -365,8 +365,8 @@ public final class DateUtil {
 	/**
 	 * date转LocalDate
 	 *
-	 * @param dateToConvert
-	 * @return java.time.LocalDate
+	 * @param dateToConvert  .
+	 * @return java.time.LocalDate .
 	 * @author gongliangjun 2020-01-02 9:48 AM
 	 */
 	public static LocalDate convertToLocalDate(Date dateToConvert) {
@@ -378,8 +378,8 @@ public final class DateUtil {
 	/**
 	 * date 转 LocalDateTime
 	 *
-	 * @param dateToConvert
-	 * @return java.time.LocalDateTime
+	 * @param dateToConvert .
+	 * @return java.time.LocalDateTime .
 	 * @author gongliangjun 2020-01-02 9:49 AM
 	 */
 	public static LocalDateTime convertToLocalDateTime(Date dateToConvert) {
@@ -391,8 +391,8 @@ public final class DateUtil {
 	/**
 	 * LocalDate 转化成 Date
 	 *
-	 * @param dateToConvert
-	 * @return java.util.Date
+	 * @param dateToConvert .
+	 * @return java.util.Date .
 	 * @author gongliangjun 2020-01-02 9:50 AM
 	 */
 	public static Date convertToDate(LocalDate dateToConvert) {
@@ -404,8 +404,8 @@ public final class DateUtil {
 	/**
 	 * LocalDateTime 转化成 Date
 	 *
-	 * @param dateToConvert
-	 * @return java.util.Date
+	 * @param dateToConvert .
+	 * @return java.util.Date .
 	 * @author gongliangjun 2020-01-02 9:50 AM
 	 */
 	public static Date convertToDate(LocalDateTime dateToConvert) {
@@ -417,8 +417,8 @@ public final class DateUtil {
 	/**
 	 * 获取月份
 	 *
-	 * @param date
-	 * @return java.lang.String
+	 * @param date .
+	 * @return java.lang.String .
 	 * @author gongliangjun 2019-12-28 7:41 PM
 	 */
 	public static String formatMonth(Date date) {
@@ -429,11 +429,6 @@ public final class DateUtil {
 		return new SimpleDateFormat(MONTH_FORMAT).format(date);
 	}
 
-	/**
-	 * 得到系统当前的时间
-	 *
-	 * @return
-	 */
 	public static String currentTime(String format) {
 		if (StringUtils.isBlank(format)) {
 			return format(new Date(), DATE_TIME);
@@ -445,7 +440,7 @@ public final class DateUtil {
 	/**
 	 * 获取前一天日期
 	 *
-	 * @param date
+	 * @param date .
 	 * @return
 	 */
 	public static Date getBeforeDay(Date date) {
@@ -459,7 +454,7 @@ public final class DateUtil {
 	/**
 	 * 获取下一天
 	 *
-	 * @param date
+	 * @param date .
 	 * @return
 	 */
 	public static Date getNextDay(Date date) {

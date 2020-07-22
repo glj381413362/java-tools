@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.glj381413362</groupId>
     <artifactId>java-tools</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.0.1.RELEASE</version>
 
     <url>https://github.com/glj381413362/java-tools</url>
-    <description>Capture Java and Spring exceptions automatically</description>
+    <name>java-tools</name>
+    <description>Java Commonly used toolkit</description>
     <licenses>
         <license>
             <name>Server Side Public License</name>
@@ -299,19 +299,25 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--<plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.1</version>
+                <version>2.9.1</version>
+                <configuration>
+                    <javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
+                        <configuration>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>

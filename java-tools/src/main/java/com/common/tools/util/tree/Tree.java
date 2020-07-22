@@ -16,12 +16,12 @@ public final class Tree {
   /**
    * 根据子节点构建树形结构
    *
-   * @param descInheritanceRelationships 按继承关系倒序排列的集合
-   * @param keyNodeMap Key -> 节点映射
-   * @param callback 回调接口，在遍历时处理子节点
-   * @param <K> Key
-   * @param <T> Node
-   * @return list，树形结构
+   * @param descInheritanceRelationships 按继承关系倒序排列的集合.
+   * @param keyNodeMap Key  节点映射.
+   * @param callback 回调接口，在遍历时处理子节点.
+   * @param <K> Key.
+   * @param <T> Node.
+   * @return list.
    */
   public static <K, T> List<T> buildTree(
       List<List<T>> descInheritanceRelationships,
@@ -68,7 +68,7 @@ public final class Tree {
   /**
    * 处理节点
    *
-   * @param keyNodeMap Key -> 节点映射
+   * @param keyNodeMap Key  节点映射
    * @param callback 处理回调接口
    * @param <K> Key
    * @param <T> Node

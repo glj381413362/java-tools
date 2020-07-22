@@ -118,8 +118,8 @@ public class BeanUtil {
 	 * 1.获取当前对象为空的属性，方便复制属性值
 	 * 2.场景：假设我们需要将某一个字段更新数据库为空字符串，根据约定前端会传递指定的字符，此方法将指定的字符转换成空字符串
 	 *
-	 * @param source
-	 * @return
+	 * @param source .
+	 * @return String[] .
 	 */
 	public static String[] getNullPropertyNames(Object source) {
 		final BeanWrapper src = new BeanWrapperImpl(source);
@@ -152,12 +152,7 @@ public class BeanUtil {
 		return emptyNames.toArray(result);
 	}
 
-	/**
-	 * 深度克隆对象
-	 *
-	 * @throws IllegalAccessException
-	 * @throws InstantiationException
-	 */
+
 	public static Object deepClone(Object objSource) throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		if (null == objSource) {
 			return null;
@@ -187,8 +182,8 @@ public class BeanUtil {
 	/**
 	 * 获取包括父类所有的属性
 	 *
-	 * @param objSource
-	 * @return
+	 * @param objSource .
+	 * @return Field[] .
 	 */
 	public static Field[] getAllFields(Object objSource) {
 		/*获得当前类的所有属性(private、protected、public)*/

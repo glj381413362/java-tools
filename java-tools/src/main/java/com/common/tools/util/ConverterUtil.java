@@ -289,16 +289,12 @@ public final class ConverterUtil {
 	 *     Long date = convert(calendar, long.class); // get calendar's time into long
 	 * </pre>
 	 *
-	 * @param fromInstance 用于创建targetType的值，即使它可能
-	 *                     不是与targetType相同的数据类型
-	 * @param toType       指定目标（最终）数据类型的类。
-	 *                     请注意，除了8个Java基本类型之外，目标类
-	 *                     也可以是Date.class，String.class，BigInteger.class，BigDecimal.class和
-	 *                     原子类。原始类可以是原始类，也可以是原始类
-	 *                     包装器类，但是，返回的值将始终（显然）是原始值
-	 * @return An instanceof targetType class, based upon the value passed in.
+	 * @param fromInstance 用于创建targetType的值，即使它可能 不是与targetType相同的数据类型 .
+	 * @param toType       指定目标（最终）数据类型的类。 请注意，除了8个Java基本类型之外，目标类 也可以是Date.class，String.class，BigInteger.class，BigDecimal.class和原子类。原始类可以是原始类，也可以是原始类 包装器类，但是，返回的值将始终（显然）是原始值 .
+	 * @return T An instanceof targetType class, based upon the value passed in.
 	 */
 	public static <T> T convert(Object fromInstance, Class<T> toType) {
+
 		if (toType == null) {
 			throw new IllegalArgumentException("Type cannot be null in ConverterUtil.convert(value, type)");
 		}

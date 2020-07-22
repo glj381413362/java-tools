@@ -1,9 +1,7 @@
 package com.common.tools.util.httpclient;
 
 /**
- * <p>
- *
- * </p>
+ * <p>util </p>
  *
  * @author gongliangjun 2019/12/28 8:03 PM
  */

@@ -5,9 +5,7 @@ import org.apache.commons.codec.binary.Base64;
 import java.io.UnsupportedEncodingException;
 
 /**
- * <p>
- *
- * </p>
+ * <p>util </p>
  *
  * @author gongliangjun 2019/12/28 8:17 PM
  */

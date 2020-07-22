@@ -9,9 +9,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import java.io.IOException;
 
 /**
- * <p>
- *
- * </p>
+ * <p>util </p>
  *
  * @author gongliangjun 2019/12/28 8:02 PM
  */

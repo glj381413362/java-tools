@@ -17,9 +17,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.*;
 
 /**
- * <p>
- *
- * </p>
+ * <p>util </p>
  *
  * @author gongliangjun 2019/12/28 8:02 PM
  */
