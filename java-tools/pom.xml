@@ -35,7 +35,7 @@
         <cglib-nodep>3.1</cglib-nodep>
         <!-- json  -->
         <fastjson.version>1.2.47</fastjson.version>
-        <jackson.version>2.10.1</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
         <poi.version>4.0.0</poi.version>
         <junit.version>4.12</junit.version>
         <spring-web.version>5.0.10.RELEASE</spring-web.version>
